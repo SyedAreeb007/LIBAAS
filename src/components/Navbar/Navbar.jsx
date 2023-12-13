@@ -1,6 +1,13 @@
 import React from 'react'
 
 const Navbar = () => {
+  const [menu, setMenu] = useState('shop');
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const { getTotalCartItems } = useContext(ShopContext);
+
+    const handleMobileMenuToggle = () => {
+        setMobileMenuOpen(!isMobileMenuOpen);
+    };
   return (
     <div>
       <div className={`navbar ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
