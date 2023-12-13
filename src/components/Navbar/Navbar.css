@@ -36,3 +36,48 @@
     gap: 3px;
     cursor: pointer;
 }
+
+.nav-menu hr {
+    border: none;
+    width: 60%; /* Adjusted width for smaller screens */
+    height: 3px;
+    border-radius: 10px;
+    background: #ff4141;
+}
+
+.nav-login-cart {
+    display: flex;
+    gap: 20px; /* Adjusted gap for smaller screens */
+    align-items: center;
+}
+
+.nav-login-cart button {
+    width: 120px; /* Adjusted width for smaller screens */
+    height: 48px; /* Adjusted height for smaller screens */
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 16px; /* Adjusted font size for smaller screens */
+    font-weight: 500;
+    background: #fde1ff;
+    cursor: pointer;
+}
+
+.nav-login-cart button:active {
+    background: #f3f3f3;
+}
+
+.nav-cart-count {
+    width: 18px; /* Adjusted width for smaller screens */
+    height: 18px; /* Adjusted height for smaller screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -28px; /* Adjusted margin for smaller screens */
+    margin-left: -35px; /* Adjusted margin for smaller screens */
+    border-radius: 9px;
+    font-size: 12px; /* Adjusted font size for smaller screens */
+    background: red;
+    color: white;
+}
