@@ -1,4 +1,10 @@
 import React from 'react'
+import { useContext, useState } from 'react';
+import logo from '../assets/logo.png';
+import cart_icon from '../assets/cart_icon.png';
+import { Link } from 'react-router-dom';
+import { ShopContext } from '../../context/ShopContext';
+
 
 const Navbar = () => {
   const [menu, setMenu] = useState('shop');
