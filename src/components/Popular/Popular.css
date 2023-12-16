@@ -11,3 +11,17 @@
     font-size: 3em; /* Adjust font size for smaller screens */
     font-weight: 600;
 }
+
+.popular hr {
+    width: 100px; /* Adjust width for smaller screens */
+    height: 4px; /* Adjust height for smaller screens */
+    border-radius: 5px;
+    background: #252525;
+    margin-bottom: 20px; /* Add some space below the hr */
+}
+
+.popular-item {
+    margin-top: 20px; /* Adjust margin for smaller screens */
+    display: flex;
+    gap: 10px;
+}
