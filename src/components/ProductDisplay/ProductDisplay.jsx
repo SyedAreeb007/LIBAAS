@@ -4,6 +4,7 @@ import star_dull_icon from '../assets/star_dull_icon.png'
 import NewsLetter from '../NewsLetter/NewsLetter'
 import { useContext } from 'react'
 import { ShopContext } from '../../context/ShopContext'
+import './ProductDisplay.css'
 
 const ProductDisplay = (props) => {
     const { product } = props;
