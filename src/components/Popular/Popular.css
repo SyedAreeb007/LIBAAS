@@ -29,7 +29,7 @@
 /* Media queries for smaller screens */
 @media only screen and (max-width: 768px) {
     .popular {
-        margin-top: 200%;
+        margin-top: 100%;
     }
 
     .popular h1 {
