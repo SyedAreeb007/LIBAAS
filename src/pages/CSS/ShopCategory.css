@@ -30,12 +30,15 @@
 }
 
 .shop-category-products {
-    margin: 20px 10px; /* Adjust margin for smaller screens */
+    margin: 20px 0; /* Adjust margin for smaller screens */
     display: grid;
     grid-template-columns: 1fr; /* Display one column on small screens */
     row-gap: 20px; /* Adjust row gap for better spacing on small screens */
     gap: 15px;
-    margin-left: 40px;
+}
+
+.shop-category-products img {
+    max-width: 100%; /* Ensure images don't exceed their container width */
 }
 
 /* Media query for screens larger than 600px (adjust the breakpoint as needed) */
