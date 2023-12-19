@@ -4,7 +4,6 @@
     background:  white;
     padding-top: 100px;
 }
-
 .loginsignup-container {
     width: 500px;
     height: 600px;
@@ -17,11 +16,34 @@
     margin: 20px 0px;
 }
 
+@media only screen and (max-width: 768px) {
+    /* Adjustments for mobile screens */
+    .loginsignup-container {
+        width: 100%; /* Adjusted for smaller screens */
+        height: auto; /* Adjusted for smaller screens */
+        padding: 40px 20px; /* Adjusted for smaller screens */
+    }
+
+    .loginsignup-container h1 {
+        margin: 20px 0; /* Adjusted for smaller screens */
+        margin-left: 32%;
+    }
+}
+
+
 .loginsignup-fields {
     display: flex;
     flex-direction: column;
     gap: 29px;
     margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for mobile screens */
+    .loginsignup-fields {
+        width: 90%; /* Adjusted for smaller screens */
+        gap: 15px; /* Adjusted for smaller screens */
+    }
 }
 
 .loginsignup-fields input {
@@ -35,6 +57,15 @@
     font-size: 18px;
 }
 
+@media only screen and (max-width: 768px) {
+    /* Adjustments for mobile screens */
+    .loginsignup-fields input {
+        width: 90%; /* Adjusted for smaller screens */
+        height: 50px; /* Adjusted for smaller screens */
+        font-size: 16px; /* Adjusted for smaller screens */
+    }
+}
+
 .loginsignup-container button {
     width: 525px;
     height: 72px;
@@ -46,6 +77,16 @@
     font-weight: 500;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for mobile screens */
+    .loginsignup-container button {
+        width: 87%; /* Adjusted for smaller screens */
+        font-size: 18px; /* Adjusted for smaller screens */
+        margin-top: 20px; /* Adjusted for smaller screens */
+    }
+}
+
 
 .loginsignup-login {
     margin-top: 20px;
