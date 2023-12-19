@@ -25,3 +25,26 @@
     display: flex;
     gap: 10px;
 }
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 768px) {
+    .popular {
+        margin-top: 100%;
+    }
+
+    .popular h1 {
+        font-size: 2.5em;
+    }
+
+    .popular hr {
+        width: 80px;
+        height: 3px;
+        margin-bottom: 15px;
+    }
+
+    .popular-item {
+        margin-top: 30px; /* Increase margin-top for more space in mobile mode */
+        flex-direction: column; /* Change to a column layout for smaller screens */
+        align-items: center; /* Center items for smaller screens */
+    }
+}
