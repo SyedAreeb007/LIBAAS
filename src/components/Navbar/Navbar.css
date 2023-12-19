@@ -1,3 +1,4 @@
+/* Common styles for all screen sizes */
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -81,3 +82,68 @@
     background: red;
     color: white;
 }
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-login-cart {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Your existing styles here */
+
+/* New styles for the toggle button */
+.toggle-button {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+  }
+  
+  /* Media query for smaller screens */
+  @media only screen and (max-width: 768px) {
+    .toggle-button {
+      display: flex;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .mobile-menu {
+      display: flex;
+    }
+  
+    .mobile-menu-open .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .mobile-menu-open .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .mobile-menu-open .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  
