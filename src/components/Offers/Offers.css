@@ -47,3 +47,50 @@
     justify-content: flex-end;
     padding-top: 50px;
 }
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .offers {
+        width: 100%; /* Set width to 100% for mobile responsiveness */
+        height: 64vh;
+        display: flex;
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        margin: auto;
+        padding: 20px; /* Adjust padding for smaller screens */
+        margin-bottom: 450px;
+        background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    }
+
+    .offers-left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Add this line to center items horizontally */
+        text-align: center; /* Add this line to center text */
+    }
+    
+    .offers-left h1 {
+        color: #171717;
+        font-size: 80px;
+        font-weight: 600;
+        margin-bottom: 20px; /* Adjust margin as needed */
+    }
+
+    .offers-left p {
+        color: #171717;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .offers-left button {
+        width: 100%; /* Make the button full width on smaller screens */
+        max-width: 282px; /* Set a max-width for the button */
+        margin-top: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .offers-right {
+        padding-top: 20px; /* Adjust padding for smaller screens */
+        justify-content: center; /* Center content on smaller screens */
+    }
+}
