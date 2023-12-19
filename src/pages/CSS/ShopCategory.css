@@ -4,11 +4,19 @@
     width: 82%;
 }
 
+/* Media query for screens with a maximum width of 768px (adjust as needed) */
+@media (max-width: 768px) {
+    .shop-category-banner {
+        display: none; /* Hide the banner in mobile mode */
+    }
+}
+
 .shop-category-indexSort {
     display: flex;
     margin: 0px 170px;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
 }
 
 .shop-category-sort {
@@ -22,9 +30,31 @@
 }
 
 .shop-category-products {
-    margin: 20px 100px;
+    margin: 20px 10px; /* Adjust margin for smaller screens */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 80px;
-    gap: 30px;
+    grid-template-columns: 1fr; /* Display one column on small screens */
+    row-gap: 20px; /* Adjust row gap for better spacing on small screens */
+    gap: 15px;
+    margin-left: 40px;
+}
+
+/* Media query for screens larger than 600px (adjust the breakpoint as needed) */
+@media screen and (min-width: 600px) {
+    .shop-category-products {
+        grid-template-columns: 1fr 1fr; /* Display two columns on medium screens */
+    }
+}
+
+/* Media query for screens larger than 900px (adjust the breakpoint as needed) */
+@media screen and (min-width: 900px) {
+    .shop-category-products {
+        grid-template-columns: 1fr 1fr 1fr; /* Display three columns on larger screens */
+    }
+}
+
+/* Media query for screens larger than 1200px (adjust the breakpoint as needed) */
+@media screen and (min-width: 1200px) {
+    .shop-category-products {
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* Display four columns on extra-large screens */
+    }
 }
