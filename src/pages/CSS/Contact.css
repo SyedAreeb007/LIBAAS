@@ -17,16 +17,16 @@
     align-items: center;
 }
 
- .form {
+.form {
     padding-top: 100px;
     text-align: center;
-} 
+}
 
 
 .column input {
     border-radius: 10px;
     height: 40px;
-} 
+}
 
 .name {
     padding: 5px;
@@ -64,4 +64,40 @@
     margin-left: 15%;
     color: white;
     cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .contact-inner {
+        margin: 0px 20px;
+        /* Adjust the margin for smaller screens */
+    }
+
+    .form {
+        padding-top: 50px;
+        /* Adjust the padding for smaller screens */
+    }
+
+    .column input {
+        border-radius: 10px;
+        height: auto;
+        width: 80%;
+    }
+
+    .name,
+    .phone,
+    .address,
+    .email {
+        margin: auto;
+    }
+
+    .df {
+        padding: 30px;
+        margin: auto;
+    }
+
+    .form button {
+        margin: auto;
+    }
+
 }
