@@ -72,3 +72,34 @@
     cursor: pointer;
     border-radius: 30px;
 }
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .cartitems {
+        margin: 20px; /* Adjust the margin for smaller screens */
+    }
+
+    .cartitems-format {
+        gap: 21px;
+    }
+
+    .cartitems-format-main {
+        grid-template-rows: 1fr; /* Display one column on smaller screens */
+        gap: 20px; /* Adjust the gap for smaller screens */
+    }
+
+    .cartitems-down {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        margin: 20px 0;
+    }
+
+    .cartitems-total {
+        margin: 0; /* Remove the margin on smaller screens */
+    }
+
+    .cartitems-total button {
+        width: 100%; /* Take up the full width on smaller screens */
+        margin-top: 20px; /* Adjust margin for smaller screens */
+    }
+}
